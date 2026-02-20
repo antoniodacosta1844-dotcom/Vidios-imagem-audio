@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>  ANGOLANO  </title>  
+ <style>
+      body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #aa9797;
+            text-align: center;
+        }
+         button:hover {
+            background-color: #19a347;
+        }
+        #mensagem {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #555;
+        }
+ </style>
+</head>
+    <header>
+        🌟 Meu Site com Imagem e Vídeo e audio
+    </head>
+     <body>
+
+    <h1>USO DE , CSS e JavaScript</h1>
+    <button onclick="mudarCor()">Clique Aqui</button>
+
+    <div id="mensagem"></div>
+
+    <!-- JavaScript -->
+    <script>
+        function mudarCor() {
+            const cores = ["#FFB6C1", "#ADD8E6", "#90EE90", "#FFD700", "#FFA07A"];
+            const corAleatoria = cores[Math.floor(Math.random() * cores.length)];
+            
+            document.body.style.backgroundColor = corAleatoria;
+            document.getElementById("mensagem").innerHTML = 
+                "Você clicou no botão! 🎉";
+        }
+    </script>
+
+</body>
+
+          <h2>-- IMAGEM --</h2>
+<img src="OIP.webp."controls width="300">
+
+
+          <h2>-- VIDIO --</h2>
+<video src="Curso Word _01 - Apresentação do Curso de Word 2016(360P).mp4" controls width="300">
+    </video>
+               <h2>-- AUDIO --</h2>
+<audio src="1-10 Tradição Perfeita.mp3"controls width="300">
+    </audio>
+       
+              <H3>-- FORMULÁRIO --</H3>
+<form>
+        <input type="text" id="nome" placeholder="Digite seu nome" required><br>
+        <input type="email" id="email" placeholder="Digite seu email" required><br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
+
+
+
